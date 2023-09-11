@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="agenda.css">
+  <script src="agenda.js" defer></script>
+
+  <title>Agenda</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Agenda</h1>
+    </div>
+
+    <div class="deadlines">
+      <!-- Prazo 1 -->
+      <div class="deadline">
+        <h2 class="deadline-title">Prazo 1</h2>
+        <div class="upload-container">
+          <label for="file1">Arquivo:</label>
+          <input type="file" id="file1" name="file1">
+        </div>
+        <div class="date-container">
+          <label for="date1">Data:</label>
+          <input type="date" id="date1" name="date1">
+        </div>
+        <button class="btn btn-remove" onclick="removeDeadline(this)">Remover</button>
+    
+      </div>
+
+      <!-- Prazo 2 -->
+      <div class="deadline">
+        <h2 class="deadline-title">Prazo 2</h2>
+        <div class="upload-container">
+          <label for="file2">Arquivo:</label>
+          <input type="file" id="file2" name="file2">
+        </div>
+        <div class="date-container">
+          <label for="date2">Data:</label>
+          <input type="date" id="date2" name="date2">
+        </div>
+        <button class="btn btn-remove" onclick="removeDeadline(this)">Remover</button>
+       
+      </div>
+      
+
+      <!-- Botão para adicionar novos prazos -->
+      <button class="btn" id="addDeadline" onclick="addDeadline()">Adicionar Prazo</button>
+    </div>
+    
+    <!-- Botão para salvar alterações -->
+    <button class="btn" id="savealte" onclick="salvarAlteracoes()">Salvar Alterações</button>
+  </div>
+
+  
+</body>
+</html>
+
+

@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(127, 126, 129);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+
+.arealogin{
+    display: flex;
+    height: -150vh;
+    margin-top: 20vh;
+    justify-content: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(161, 161, 161);
+    border-radius: 10px;
+    width: 355px;
+    height: 320px;
+    padding: 35px;
+    margin-left: -13vh;
+}
+
+.login img{
+    margin-top: -11vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35vh;
+    height: auto;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    margin-top: -10vh;
+    width: 50vh;
+    
+    
+}
+
+.login input{
+    margin-top: 9px; 
+    background-color:ghostwhite;
+    padding-left: 10px;
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+input::placeholder{
+    color:black;
+    font-size: 14px;
+
+}
+
+form [type="submit"]{
+    display: block;
+    background-color: #7976A9;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.ircadastro{
+    margin-top: 50vh;
+    margin-left: -53vh;
+}

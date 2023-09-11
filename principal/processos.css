@@ -1,0 +1,48 @@
+/* Estilização básica */
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(127, 126, 129);
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+}
+
+/* Estilização do card de processo */
+.process-card {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 95%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #7976A9;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #7976A9;
+}

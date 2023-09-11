@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ccc;
+  }
+
+header {
+    background-color:#7976A9;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+h1 {
+    margin: 0;
+  }
+
+main {
+    padding: 20px;
+  }
+
+.card {
+    background-color: #ebe9e9;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+.card h2 {
+    margin-top: 0;
+  }
+
+.card p {
+    margin:  0;
+  }
+
+footer {
+    background-color: #7976A9;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+.card-link {
+    text-decoration: none;
+    color: black;
+  }

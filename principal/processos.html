@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="processos.css">
+    <title>Processos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Processos</h1>
+        <button id="addProcessBtn">Adicionar Novo Processo</button>
+        <div id="processList">
+            <!-- Lista de processos será gerada dinamicamente aqui -->
+        </div>
+    </div> 
+</body>
+</html>
+
+<script>
+const processList = document.getElementById("processList");
+const addProcessBtn = document.getElementById("addProcessBtn");
+
+// Função para criar um novo card de processo
+function createProcessCard() {
+    const card = document.createElement("div");
+    card.className = "process-card"; // Define a classe "process-card" para estilização
+    
+    const advogadoInput = document.createElement("input");
+    advogadoInput.type = "text";
+    advogadoInput.placeholder = "Nome do Advogado Responsável";
+    
+    const fileInput = document.createElement("input");
+    fileInput.type = "file";
+    
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Excluir";
+    deleteBtn.addEventListener("click", () => {
+        processList.removeChild(card);
+    });
+    
+    card.appendChild(advogadoInput);
+    card.appendChild(fileInput);
+    card.appendChild(deleteBtn);
+    
+    processList.appendChild(card);
+}
+
+// Adicionar evento de clique ao botão "Adicionar Novo Processo"
+addProcessBtn.addEventListener("click", createProcessCard);
+</script>
+    
+</body>
+</html>
