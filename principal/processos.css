@@ -1,4 +1,4 @@
-/* Estilização básica */
+
 body{
     font-family: Arial, sans-serif;
     background-color: rgb(127, 126, 129);
@@ -14,7 +14,7 @@ button {
     margin-top: 10px;
 }
 
-/* Estilização do card de processo */
+
 .process-card {
     background-color: #f0f0f0;
     border: 1px solid #ccc;

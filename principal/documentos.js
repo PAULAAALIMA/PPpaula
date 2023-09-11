@@ -1,4 +1,4 @@
-// Exemplo de documentos
+
 const documentos = [
     { nome: "Documento1.pdf", data: "2023-09-10" },
     { nome: "Documento2.docx", data: "2023-09-11" },
@@ -8,7 +8,6 @@ const documentos = [
 
 const documentList = document.getElementById("documentList");
 
-// Função para listar os documentos na página
 function listDocuments() {
     documentList.innerHTML = ""; // Limpa a lista
 
@@ -19,9 +18,8 @@ function listDocuments() {
     });
 }
 
-listDocuments(); // Chama a função para listar os documentos inicialmente
+listDocuments(); 
 
-// Função para buscar documentos por nome
 function searchDocuments() {
     const searchInput = document.getElementById("searchInput");
     const searchTerm = searchInput.value.toLowerCase();
@@ -30,8 +28,8 @@ function searchDocuments() {
         return documento.nome.toLowerCase().includes(searchTerm);
     });
 
-    documentList.innerHTML = ""; // Limpa a lista
-
+    documentList.innerHTML = "";
+    
     if (filteredDocumentos.length === 0) {
         const li = document.createElement("li");
         li.textContent = "Nenhum documento encontrado.";

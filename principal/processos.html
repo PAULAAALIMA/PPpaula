@@ -11,7 +11,7 @@
         <h1>Lista de Processos</h1>
         <button id="addProcessBtn">Adicionar Novo Processo</button>
         <div id="processList">
-            <!-- Lista de processos será gerada dinamicamente aqui -->
+           
         </div>
     </div> 
 </body>
@@ -21,11 +21,11 @@
 const processList = document.getElementById("processList");
 const addProcessBtn = document.getElementById("addProcessBtn");
 
-// Função para criar um novo card de processo
+
 function createProcessCard() {
     const card = document.createElement("div");
-    card.className = "process-card"; // Define a classe "process-card" para estilização
-    
+    card.className = "process-card"; 
+
     const advogadoInput = document.createElement("input");
     advogadoInput.type = "text";
     advogadoInput.placeholder = "Nome do Advogado Responsável";

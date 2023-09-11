@@ -32,7 +32,7 @@ let deadlineCount = 2;
 
 
     function salvarAlteracoes() {
-  // Coletar os dados das tarefas e salvar em algum lugar (por exemplo, em um objeto ou em uma matriz)
+  
   const tarefas = [];
 
   const deadlineElements = document.querySelectorAll(".deadline");
@@ -41,7 +41,7 @@ let deadlineCount = 2;
     const arquivo = deadlineElement.querySelector("input[type=file]").value;
     const data = deadlineElement.querySelector("input[type=date]").value;
 
-    // Salvar os dados da tarefa em um objeto
+    
     const tarefa = {
       titulo: titulo,
       arquivo: arquivo,
@@ -51,9 +51,7 @@ let deadlineCount = 2;
     tarefas.push(tarefa);
   });
 
-  // Você pode fazer algo com os dados aqui, como enviar para um servidor ou armazenar localmente
-
-  // Redirecionar de volta para a página principal (index.html)
+  
   window.location.href = "principal.html";
 }
 
